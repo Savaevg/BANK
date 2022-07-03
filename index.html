@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="shortcut icon" href="./img/kisspng-dollar-coin-united-states-dollar-gold-coin-coins-5ab59babc0dc50.69190299152185130779.png" type="image/png">
+    <title>Bank</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="registr">
+            <form action="#" class="registr-block" name="form">
+                <h1>Добро пожаловать</h1>
+                <div class="inputName">
+                    <label for="name">Введите ваше имя</label>
+                    <input type="text" name="name" id="name" class="registr-name">
+                </div>
+                <div class="inputPass">
+                    <label for="name">Введите пароль</label>
+                    <input type="password" name="pass" id="pass" class="registr-pass">
+                </div>
+                <div class="block-but">
+                    <button type="submit" name="but" id="but">Отправить</button>
+                </div>
+            </form>
+        </div>
+        <div class="bank">
+            <header class="head"></header>
+            <div class="container">
+                <div class="bank-info">
+                    <div class="info">
+                        <div class="info-text">Текущий баланс</div>
+                        <div class="info-date"></div>
+                    </div>
+                    <div class="balans"></div>
+                </div>
+                <div class="bank-items">
+                    <div class="bank-item1"></div>
+                    <div class="bank-item2">
+                        <div class="container-item">
+                            <div class="bank-item_text">
+                                <h3>Перевести деньги</h3>
+                            </div>
+                            <form action="#" class="form2">
+                                <div class="bank-item_recipient bank-item">
+                                    <input type="text" name="recipient" id="recipient" class="input input2 ">
+                                    <label for="recipient">Получатель</label>
+                                </div>
+                                <div class="bank-item_sum bank-item">
+                                    <input type="number" name="sum" id="sum" class="input input2">
+                                    <label for="sum">Сумма</label>
+                                </div>
+                                <div class="but-form bank-item">
+                                    <button type="submit" name="but2" id="but2" class="button"><img
+                                            src="./img/pngwing.com (13).png" /></button>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                    <div class="bank-item3">
+                        <div class="container-item">
+                            <div class="bank-item_text">
+                                <h3>Запросить займ</h3>
+                            </div>
+                            <form action="#" class="form3">
+                                <div class="bank-item_recipient bank-item">
+                                    <input type="text" name="recipient3" id="recipient3" class="input input3 ">
+                                    <label for="recipient3">Сумма</label>
+                                </div>
+                                <div class="but-form3 bank-item">
+                                    <button type="submit" name="but3" id="but3" class="button"><img
+                                            src="./img/pngwing.com (13).png" /></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bank-item4">
+                        <div class="container-item">
+                            <div class="bank-item_text">
+                                <h3>Закрыть счёт</h3>
+                            </div>
+                            <form action="#" class="form4">
+                                <div class="bank-item_repname bank-item">
+                                    <input type="text" name="rep_name" id="rep_name" class="input input4 ">
+                                    <label for="rep_name">Подтвердить имя</label>
+                                </div>
+                                <div class="bank-item_sum bank-item">
+                                    <input type="password" name="pin" id="pin" class="input input4">
+                                    <label for="pin">Подтвердить PIN</label>
+                                </div>
+                                <div class="but-form bank-item">
+                                    <button type="submit" name="but4" id="but4" class="button"><img
+                                            src="./img/pngwing.com (13).png" /></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- <div class="timer">
+                            <div class="timer__items">
+                                <div class="timer_item timer_min">00</div>
+                                <div class="timer_item timer_sec">00</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="total">
+                    <p class="total__label">Получение</p>
+                    <p class="total__value total__value--in">0000$</p>
+                    <p class="total__label">Вывод</p>
+                    <p class="total__value total__value--out">0000$</p>
+                    <button class="btn--sort">сортировать &uparrow;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

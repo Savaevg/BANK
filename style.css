@@ -1,0 +1,285 @@
+.registr {
+    width: 100%;
+    min-height: 100vh;
+    background: url(./img/Money_Banknotes_Dollars_100_White_background_512910_1365x1024.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registr-block {
+    min-height: 200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 20px;
+    background-color: rgba(167, 248, 221, 0.685);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registr-block h1 {
+    text-align: center;
+}
+.inputName,
+.inputPass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inputName label,
+.inputPass label {
+    text-align: center;
+    font-weight: 600;
+}
+.inputPass {
+    margin-top: 20px;
+}
+.inputPass input {
+    width:50px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid red;
+    text-align: center;
+    outline: none;
+}
+.inputName input {
+    border-radius: 10px;
+    border: 1px solid red;
+    padding: 2px;
+    text-align: center;
+    outline: none;
+}
+.block-but {
+    margin: 20px;
+}
+.block-but button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: rgba(250, 235, 215, 0.685);
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.block-but button:hover {
+    background-color: rgba(255, 0, 0, 0.664);
+    border: none;
+}
+
+/* bank */
+
+.bank {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+
+}
+
+.head {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bank-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+
+.info-text {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.info-date {
+    font-size: 13px
+}
+.balans {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.bank-items {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "a c"
+    "a d";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 4fr 2.5fr;
+    grid-gap: 10px;
+}
+
+
+.transactions__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px;
+    border-bottom: 2px solid rgba(102, 102, 102, 0.705);
+    border-radius: 5px;
+    padding-bottom: 4px ;
+
+
+}
+.transactions__type--deposit {
+    font-size: 16px;
+    color: blue;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.transactions__type--withdrawal {
+    font-size: 16px;
+    color: red;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.transactions__date {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 10px;
+}
+
+.transactions__value {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.typeDate {
+    display: flex;
+    flex-direction: row;
+}
+
+.bank-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.form2 label,
+.form3 label,
+.form4 label {
+    text-align: center;
+}
+.form2,
+.form4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-item {
+    max-width: 330px;
+    margin: 0 auto;
+
+}
+
+.bank-item_text {
+    font-family: 'Times New Roman', Times, serif;
+}
+.bank-item button {
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+.input {
+    max-width: 120px;
+
+    border-radius: 4px;
+}
+
+
+.bank-item1{
+    grid-area: a;
+    background-color: rgb(205, 253, 253);
+    border: 0.1px solid rgb(205, 253, 253) ;
+    border-radius: 8px;
+    max-height: 440px;
+    overflow-y: scroll;
+}
+.bank-item2{
+    grid-area: b;
+    background-color: rgba(235, 84, 235, 0.918);
+    border: 0.1 solid rgba(235, 84, 235, 0.918) ;
+    border-radius: 8px;
+}
+.input2 {
+    background-color: rgba(247, 162, 247, 0.616);
+    border: 0.1px solid rgba(255, 59, 255, 0.616);
+}
+.bank-item3{
+    grid-area: c;
+    background-color: rgba(62, 252, 141, 0.918);
+    border: 0.1 solid rgba(25, 248, 81, 0.918) ;
+    border-radius: 8px;
+}
+.input3 {
+    background-color: rgba(131, 250, 180, 0.932);
+    border: 0.1px solid  rgba(62, 252, 141, 0.918);
+}
+.but-form3 {
+    margin-left: 10px;
+}
+.bank-item4{
+    grid-area: d;
+    background-color: rgba(125, 92, 247, 0.918);
+    border: 0.1 solid rgba(125, 92, 247, 0.918) ;
+    border-radius: 8px;
+}
+.input4 {
+    background-color: rgba(161, 138, 247, 0.918);
+    border: 0.1px solid  rgba(125, 92, 247, 0.918);
+}
+
+.total {
+    display: flex;
+    align-items: center;
+}
+.total__label {
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.total__value {
+    margin-right: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.total__value--in {
+    color:blue ;
+}
+.total__value--out {
+    color:red ;
+}
+
+.btn--sort {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #775df7;
+    border: 1px solid white;
+    border-radius: 5px ;
+    cursor: pointer;
+}
+
